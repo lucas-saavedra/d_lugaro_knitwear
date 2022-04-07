@@ -5,30 +5,29 @@ import './modal.css'
 const ModalMobile = (props) => {
     const { width } = useWindowDimensions()
     return (
-        < Modal dialogClassName="m-0 mx-auto " className="bg-transparent text-dark"
+        < Modal dialogClassName="m-0 mx-auto" className="bg-transparent text-dark"
             {...props}
             key={props.idx}
-            size="lg"
+            size="xl"
             aria-labelledby="contained-modal-title-vcenter"
         >
-            <Modal.Body className="mx-0 px-0 text-center" style={{
-                height: '80vh',
-                widht: '100%',
-            }}>
-                <Image key={props.idx} style={{
-                    padding: `${width < 400 ? "0" : "3em 1em"}`,
-                    maxWidth: '100%',
-                    height: '90%',
-                }} src={`./assets/img/${props.idx + 1}.jpg`} />
-                <div className='mobile_back_arrow' >
-                    <BackArrow
-                        isleft={true}
-                        modal={props.onHide}
-                        style={{
-                            height: '10%',
-                        }} />
-                </div>
-            </Modal.Body>
+
+            <Image key={props.idx} style={{
+                padding: `${width < 400 ? "1em 0em 0 0em" : "3em 1em"}`,
+                maxWidth: '100%',
+                marginLeft: '32px',
+                marginRight: '32px',
+                height: `${width < 400 ? '90%' : '80%'} `,
+            }} src={`./assets/img/${props.idx + 1}.jpg`} />
+            <div className='mobile_back_arrow' >
+                <BackArrow
+                    isleft={true}
+                    modal={props.onHide}
+                    style={{
+                        height: '10%',
+                    }} />
+            </div>
+
 
         </Modal >
     )

@@ -26,8 +26,10 @@ const OffcanvasDesktop = (props) => {
                 </div>
                 <Image key={`${props.idx + 1}offcanvas`} style={{
                     maxWidth: '100%',
-                    height: '90%',
+                    maxHeight: '90%',
                     paddingBottom: '3em',
+                    paddingLeft: '1em',
+                    paddingRight: '1em',
 
                 }} src={`./assets/img/${props.idx + 1}.jpg`} />
             </Offcanvas.Body>
