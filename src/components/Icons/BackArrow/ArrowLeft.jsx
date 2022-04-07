@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import './backArrow.css'
 
 const styles_hover = {
@@ -17,6 +16,7 @@ const BackArrowHover = (props) => {
         {...props}
         width={91.424}
         height={35.706}
+        viewBox="0 0 90.924 35.706"
       >
         <g id="Back" transform="translate(0.5)">
           <g

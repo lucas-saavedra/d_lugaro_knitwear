@@ -1,10 +1,8 @@
 
-import { useState } from 'react';
 const BackArrowInversed = (props) => {
-    const [hover, setHover] = useState(false);
+
     return (
-        <div onMouseOver={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}>
+        <div >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={93.575}
