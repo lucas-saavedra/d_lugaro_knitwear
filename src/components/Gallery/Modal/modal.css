@@ -1,0 +1,33 @@
+.modal {
+  background: rgb(193, 133, 133);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(193, 133, 133, 0.9164040616246498) 0%,
+    rgba(37, 37, 37, 0.6222864145658263) 64%,
+    rgba(37, 37, 37, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(193, 133, 133, 0.9164040616246498) 0%,
+    rgba(37, 37, 37, 0.6222864145658263) 64%,
+    rgba(37, 37, 37, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(193, 133, 133, 0.9164040616246498) 0%,
+    rgba(37, 37, 37, 0.6222864145658263) 64%,
+    rgba(37, 37, 37, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c18585",endColorstr="#252525",GradientType=1);
+}
+.modal-content {
+  background-color: transparent !important ;
+  color: white;
+  border: none !important;
+}
+.mobile_back_arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 83px;
+}

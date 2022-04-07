@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+
+.back {
+  background-color: transparent;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Cutive Mono", monospace;
+  font-size: 20px;
+  color: #dadada;
+  font-weight: bold;
+}
