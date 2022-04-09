@@ -1,0 +1,8 @@
+.svgDlugaro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 350px;
+  height: 150px;
+}
