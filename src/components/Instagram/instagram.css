@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/*--------MOBILE------------*/
+@media (max-width: 600px) {
+  .svg_instagram {
+    height: 21px;
+    padding-right: 16px;
+  }
+  .instagramContainer {
+    height: 40px;
+    width: 160px;
+    margin-bottom: 3.125em;
+  }
+  .instagramLink:hover {
+    fill: #c18585;
+    text-decoration: none;
+    background-color: #252525;
+    color: #c18585;
+  }
+}
+/*--------Desktop------------*/
+@media (min-width: 600px) {
+  .svg_instagram {
+    height: 37px;
+    padding-right: 16px;
+  }
+  .instagramContainer {
+    font-family: "Open Sans", sans-serif;
+    height: 100px;
+    width: 536px;
+    font-size: 30px;
+    margin-bottom: 2em;
+  }
+  .instagramLink:hover {
+    background-color: #c18585;
+    color: #252525;
+    text-decoration: none;
+  }
+  .instagramLink:hover .svg_instagram {
+    fill: #252525;
+  }
+}
+/*-------------------------------*/
+.instagramContainer {
+  border: 1px solid #c18585;
+}
+
+.instagramLink {
+  text-decoration: none;
+  color: #c18585;
+  fill: #c18585;
+}
+
+.instagramLink:hover {
+  font-weight: normal;
+}

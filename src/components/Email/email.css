@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+
+@media (max-width: 600px) {
+  .email {
+    font-family: "Cutive Mono", monospace;
+    font-size: 1rem;
+    color: #dadada;
+    padding-top: 1.3125em;
+    padding-bottom: 1.3125em;
+    margin: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .email {
+    font-family: "Cutive Mono", monospace;
+    font-size: 1.875em;
+    color: #dadada;
+    padding: 5rem;
+  }
+}

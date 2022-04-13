@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+/*------------- sticky class------------------*/
+.sticky {
+  height: 4em;
+  width: 100%;
+  position: -webkit-sticky;
+  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(37, 37, 37, 0.927608543417367) 100%
+  );
+  position: sticky;
+  z-index: 5;
+  bottom: 0;
+  overflow-x: hidden;
+}
+
+/*--------MOBILE------------*/
+@media (max-width: 600px) {
+  .container_whatsapp {
+    height: 3em;
+    margin: 0 2em;
+  }
+  .link {
+    text-decoration: none;
+    color: #252525;
+    font-size: 16px;
+  }
+  .svg_whatsapp {
+    height: 21px;
+    width: 21px;
+    margin-right: 5px;
+  }
+  .sticky {
+    z-index: 1056;
+  }
+}
+@media (min-width: 600px) and (max-width: 1020px) {
+  .sticky {
+    position: static;
+  }
+}
+/*--------DESKTOP------------*/
+@media (min-width: 600px) {
+  .sticky {
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0px;
+    height: 9em;
+    z-index: 1056;
+  }
+  .container_whatsapp {
+    height: 6em;
+    width: 18.75em;
+    transform: translate(201px);
+    transition: transform 1s;
+    overflow-x: hidden;
+  }
+  .svg_whatsapp {
+    height: 46px;
+    width: 46px;
+  }
+  .link {
+    text-decoration: none;
+    color: #252525;
+    font-size: 33px;
+    margin-left: 2rem;
+  }
+  .container_whatsapp:hover {
+    transform: translate(0);
+    height: 96px;
+    overflow-x: hidden;
+  }
+}
+
+/*------------------*/
+
+.link:hover {
+  text-decoration: none;
+  color: #252525;
+}
+
+.container_whatsapp {
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Open Sans", sans-serif;
+  background-color: #0ea477;
+  color: #252525;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

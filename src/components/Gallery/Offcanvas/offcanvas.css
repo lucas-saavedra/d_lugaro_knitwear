@@ -1,0 +1,27 @@
+.offcanvas_background {
+  background: rgb(193, 133, 133);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(193, 133, 133, 0.9164040616246498) 0%,
+    rgba(37, 37, 37, 0.6222864145658263) 64%,
+    rgba(37, 37, 37, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(193, 133, 133, 0.9164040616246498) 0%,
+    rgba(37, 37, 37, 0.6222864145658263) 64%,
+    rgba(37, 37, 37, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(193, 133, 133, 0.9164040616246498) 0%,
+    rgba(37, 37, 37, 0.6222864145658263) 64%,
+    rgba(37, 37, 37, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c18585",endColorstr="#252525",GradientType=1);
+}
+.desktop_back_arrow {
+  padding: 2em 2em 0 0;
+}
+
+
