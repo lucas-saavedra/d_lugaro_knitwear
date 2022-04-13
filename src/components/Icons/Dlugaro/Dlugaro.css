@@ -3,6 +3,15 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 350px;
-  height: 150px;
+  width: 230px;
+  height: 80px;
+}
+
+.svgDlugaroPC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 1024px;
+  height: 350px;
 }

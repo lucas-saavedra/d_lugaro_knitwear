@@ -11,12 +11,15 @@ import Mision from "../../Icons/Mision/Mision";
 import Vision from "../../Icons/Vision/Vision";
 import Value from "../../Icons/Value/Value";
 import Back from "../../Icons/Back/Back";
+import useWindowDimensions from "../../../Helpers/useWindowsDimensions";
 
 const AboutButton = ({ ...props }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const { width } = useWindowDimensions;
 
   return (
     <div className="containerCanvas d-flex justify-content-center">
@@ -28,10 +31,12 @@ const AboutButton = ({ ...props }) => {
         onHide={handleClose}
         {...props}
         placement="end"
-        style={{ width: "50vw" }}
+        style={width > 1024 ? { width: "100%" } : { width: "694px" }}
       >
         <Offcanvas.Header className="d-flex justify-content-center">
-          <Dlugaro className="titleCanvas" />
+          <div className="dlugaroTitleContainer">
+            <Dlugaro />
+          </div>
         </Offcanvas.Header>
         <Offcanvas.Body className="d-flex justify-content-between containerCanvasBody">
           <div className="misionContainer">

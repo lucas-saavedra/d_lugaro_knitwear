@@ -6,11 +6,19 @@ import "./About.css";
 // Components
 import Dlugaro from "../Icons/Dlugaro/Dlugaro";
 import AboutButton from "./AboutButton/AboutButton";
+import useWindowDimensions from "../../Helpers/useWindowsDimensions";
 
 const About = () => {
+  const { width } = useWindowDimensions();
   return (
     <div className="aboutContainer">
-      <Dlugaro />
+      <div
+        className={
+          width > 1024 ? "dlugaroAboutContainer" : "dlugaroAboutContainerMobile"
+        }
+      >
+        <Dlugaro />
+      </div>
       <p className="textAbout">
         The company is the fruit of the experience of three generations who work
         with high-quality peruvian fibres with dedication. The company was born

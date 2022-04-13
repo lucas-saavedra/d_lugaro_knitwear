@@ -1,1 +1,12 @@
+.carrousel {
+  padding-top: 30px;
+  overflow-y: hidden;
+}
 
+.image {
+  overflow-y: hidden;
+  padding-top: 95px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -100px;
+}

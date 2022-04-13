@@ -5,7 +5,8 @@
   font-size: 14px;
   background-color: #252525;
   height: 32px;
-  border-bottom: 2px solid #c18585;
+  border-bottom: 1px solid #c18585;
+  border-top: 1px solid #c18585;
   position: fixed;
   top: 0;
   width: 100%;
@@ -14,7 +15,7 @@
 }
 
 .navItem {
-  padding: 5px;
+  padding: 2px;
 }
 
 @media (min-width: 1024px) {
@@ -25,7 +26,8 @@
     font-size: 20px;
     background-color: #252525;
     height: 48px;
-    border-bottom: 2px solid #c18585;
+    border-bottom: 1px solid #c18585;
+    border-top: 1px solid #c18585;
     position: fixed;
     top: 0;
     width: 100%;

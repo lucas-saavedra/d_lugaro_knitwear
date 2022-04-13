@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+
 .aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #252525;
   position: relative;
   z-index: 1;
@@ -10,7 +16,28 @@
   color: #dadada;
   font-size: 14px;
   text-align: center;
-  padding: 21px 50px 21px 50px;
+  padding: 21px 40px 21px 40px;
+  font-family: "Cutive Mono", monospace;
+}
+
+.dlugaroAboutContainerMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 250px;
+  height: 100px;
+}
+
+.dlugaroAboutContainer {
+  position: absolute;
+  z-index: 2;
+  margin-top: -1500px;
+  width: 1024px;
+  height: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
 }
 
 @media (min-width: 1024px) {
@@ -19,6 +46,6 @@
     font-size: 20px;
     text-align: center;
     padding: 64px 0 64px 0;
-    margin: 0 250px 0 250px;
+    margin: 0 25% 0 25%;
   }
 }

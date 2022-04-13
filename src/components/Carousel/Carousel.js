@@ -12,51 +12,26 @@ import Carousel from "react-bootstrap/Carousel";
 
 const Carrousel = () => {
   return (
-    <Carousel
-      fade
-      className="carrousel"
-      nextIcon
-      prevIcon
-      indicators={false}
-      style={{ height: "120vh", overflowY: "hidden" }}
-    >
+    <Carousel fade className="carrousel" nextIcon prevIcon indicators={false}>
       <Carousel.Item>
         <Image
-          className="d-block w-100 fluid"
+          className="d-block w-100 fluid image"
           src={image}
           alt="Imagen carrousel uno"
-          style={{
-            overflowY: "hidden",
-            maxWidth: "100%",
-            maxHeight: "100%",
-            marginTop: "-100px",
-          }}
         />
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          className="d-block w-100 fluid"
+          className="d-block w-100 fluid image"
           src={imageTwo}
           alt="Imagen carrousel dos"
-          style={{
-            overflowY: "hidden",
-            maxWidth: "100%",
-            maxHeight: "100%",
-            marginTop: "-100px",
-          }}
         />
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          className="d-block w-100 fluid"
+          className="d-block w-100 fluid image"
           src={imageThree}
-          alt="Imagen carrousel dos"
-          style={{
-            overflowY: "hidden",
-            maxWidth: "100%",
-            maxHeight: "100%",
-            marginTop: "-100px",
-          }}
+          alt="Imagen carrousel tres"
         />
       </Carousel.Item>
     </Carousel>
