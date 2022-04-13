@@ -6,7 +6,7 @@ import "./About.css";
 // Components
 import Dlugaro from "../Icons/Dlugaro/Dlugaro";
 import AboutButton from "./AboutButton/AboutButton";
-import useWindowDimensions from "../../Helpers/useWindowsDimensions";
+import useWindowDimensions from "../../hooks/useWindowsDimensions";
 
 const About = () => {
   const { width } = useWindowDimensions();

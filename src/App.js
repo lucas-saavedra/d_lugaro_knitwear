@@ -7,15 +7,15 @@ import About from "./components/About/About";
 import Carousel from "./components/Carousel/Carousel.js";
 import IndicadorGallery from "./components/IndicadorGallery/IndicadorGallery";
 
-const App = () => {
+function App() {
   return (
-    <div className="appContainer">
+    <div className="App-header">
       <Navbar />
       <Carousel />
       <About />
       <IndicadorGallery />
     </div>
   );
-};
+}
 
 export default App;

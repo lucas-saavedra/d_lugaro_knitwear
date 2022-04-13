@@ -11,7 +11,7 @@ import Mision from "../../Icons/Mision/Mision";
 import Vision from "../../Icons/Vision/Vision";
 import Value from "../../Icons/Value/Value";
 import Back from "../../Icons/Back/Back";
-import useWindowDimensions from "../../../Helpers/useWindowsDimensions";
+import useWindowDimensions from "../../../hooks/useWindowsDimensions";
 
 const AboutButton = ({ ...props }) => {
   const [show, setShow] = useState(false);
