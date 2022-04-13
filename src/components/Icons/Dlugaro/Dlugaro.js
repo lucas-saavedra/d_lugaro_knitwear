@@ -3,12 +3,7 @@ import React from "react";
 // CSS
 import "./Dlugaro.css";
 
-// Components
-import useWindowDimensions from "../../../Helpers/useWindowsDimensions";
-
 const Dlugaro = (props) => {
-  const { width } = useWindowDimensions();
-
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
