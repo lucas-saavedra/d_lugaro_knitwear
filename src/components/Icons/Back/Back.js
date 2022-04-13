@@ -3,9 +3,9 @@ import * as React from "react";
 const Back = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={89.127}
-    height={35}
-    viewBox="0 0 89.127 35"
+    width={91.424}
+    height={35.706}
+    viewBox="0 0 90.924 35.706"
     {...props}
   >
     <g

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-// CSS
-import "./AboutButton.css";
 
 // Components
 import Dlugaro from "../../Icons/Dlugaro/Dlugaro";
@@ -11,8 +9,10 @@ import Mision from "../../Icons/Mision/Mision";
 import Vision from "../../Icons/Vision/Vision";
 import Value from "../../Icons/Value/Value";
 import Back from "../../Icons/Back/Back";
-import useWindowDimensions from "../../../hooks/useWindowsDimensions";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
+// CSS
+import "./AboutButton.css";
 const AboutButton = ({ ...props }) => {
   const [show, setShow] = useState(false);
 
@@ -27,14 +27,17 @@ const AboutButton = ({ ...props }) => {
         About D ´ Lugaro
       </Button>
       <Offcanvas
+
         show={show}
         onHide={handleClose}
         {...props}
         placement="end"
-        style={width > 1024 ? { width: "100%" } : { width: "694px" }}
+        style={{ width: `${width > 1024 ? "100%" : "694px"}`, zIndex: '1057', background: '#c18585' }}
+
+        className='offcanvasContainer'
       >
         <Offcanvas.Header className="d-flex justify-content-center">
-          <div className="dlugaroTitleContainer">
+          <div className="dlugaroTitleContainer" >
             <Dlugaro />
           </div>
         </Offcanvas.Header>
@@ -72,7 +75,7 @@ const AboutButton = ({ ...props }) => {
           </button>
         </Offcanvas.Body>
       </Offcanvas>
-    </div>
+    </div >
   );
 };
 

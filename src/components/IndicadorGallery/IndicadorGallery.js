@@ -6,7 +6,7 @@ import "./IndicadorGallery.css";
 // Components
 import ArrowGalleryDesktop from "../Icons/ArrowGallery/ArrowGalleryDesktop/ArrowGalleryDesktop";
 import ArrowGalleryMobile from "../Icons/ArrowGallery/ArrowGalleryMobile/ArrowGalleryMobile";
-import useWindowDimensions from "../../hooks/useWindowsDimensions";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const IndicadorGallery = () => {
   const { width } = useWindowDimensions();

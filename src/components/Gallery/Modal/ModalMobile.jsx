@@ -1,9 +1,9 @@
 import { Image, Modal } from "react-bootstrap";
-import useWindowDimensions from "../../../hooks/useWindowDimensions ";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 import BackArrow from '../../Icons/BackArrow'
 import './modal.css'
 const ModalMobile = (props) => {
-    const { width } = useWindowDimensions()
+    const { width, height } = useWindowDimensions()
     return (
         < Modal
             dialogClassName="m-0 mx-auto h-100"
@@ -14,14 +14,19 @@ const ModalMobile = (props) => {
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
         >
-            <Image key={props.idx} style={{
-
-                padding: `${width < 400 ? "1em 0em 0 0em" : "3em 1em"}`,
-               
-                marginLeft: '2em',
-                marginRight: '2em',
-                maxHeight: `${width < 400 ? '90%' : '80%'} `,
-            }} src={`./assets/img/${props.idx + 1}.jpg`} />
+            <Image key={props.idx}
+                style={height > 400 ? {
+                    padding: `${width < 400 ? "1em 0em 0 0em" : "3em 1em"}`,
+                    marginLeft: '2em',
+                    marginRight: '2em',
+                    maxHeight: `${width < 400 ? '90%' : '80%'}`,
+                }
+                    : {
+                        padding: `${width < 400 ? "1em 0em 0 0em" : "3em 1em"}`,
+                        marginLeft: '2em',
+                        marginRight: '2em',
+                        marginBottom: '1em',
+                    }} src={`./assets/img/${props.idx + 1}.jpg`} />
             <div className='mobile_back_arrow' >
                 <BackArrow
                     isleft={true}

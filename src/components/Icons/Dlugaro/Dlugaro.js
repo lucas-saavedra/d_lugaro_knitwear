@@ -2,16 +2,18 @@ import React from "react";
 
 // CSS
 import "./Dlugaro.css";
-
 const Dlugaro = (props) => {
+  let fillStyle;
+  if (props.fill === undefined) { fillStyle = '#ffff' };
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 86.315 32.028"
       {...props}
+      style={{ fill: fillStyle }}
     >
       <defs>
-        <style>{".d{fill:#FFFFFF;}"}</style>
       </defs>
       <g id="a" />
       <g id="b">
@@ -32,7 +34,7 @@ const Dlugaro = (props) => {
           </g>
         </g>
       </g>
-    </svg>
+    </svg >
   );
 };
 

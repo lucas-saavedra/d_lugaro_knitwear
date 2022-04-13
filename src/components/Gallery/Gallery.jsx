@@ -1,6 +1,6 @@
 import { Row, Container, Image } from "react-bootstrap"
 import { useState, useEffect } from "react";
-import useWindowDimensions from "../../hooks/useWindowDimensions ";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import ModalMobile from "./Modal/ModalMobile";
 import OffcanvasDesktop from "./Offcanvas/OffcanvasDesktop";
 import { isleft, shuffleArray } from "../../helpers/";

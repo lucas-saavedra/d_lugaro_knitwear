@@ -1,11 +1,9 @@
 /* Fuente */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
-.offcanvas-header,
-.offcanvas-body {
-  background-color: #c18585;
+.offcanvasContainer {
+  background: #c18585;
 }
-
 .containerCanvas .buttonAbout {
   width: 160px;
   height: 40px;
@@ -70,7 +68,7 @@ p {
 }
 
 .iconBack {
-  padding-right: 25px;
+  
   color: black;
 }
 
@@ -80,10 +78,8 @@ p {
   justify-content: flex-end;
   align-items: flex-end;
   text-align: end;
-  font-size: 20px;
   background-color: transparent;
   border: none;
-  letter-spacing: 7px;
   padding: 0;
   cursor: pointer;
 }

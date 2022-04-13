@@ -3,10 +3,11 @@ import React from "react";
 // CSS
 import "./About.css";
 
+
 // Components
 import Dlugaro from "../Icons/Dlugaro/Dlugaro";
 import AboutButton from "./AboutButton/AboutButton";
-import useWindowDimensions from "../../hooks/useWindowsDimensions";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const About = () => {
   const { width } = useWindowDimensions();
