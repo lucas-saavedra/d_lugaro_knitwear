@@ -10,6 +10,12 @@
     width: 160px;
     margin-bottom: 3.125em;
   }
+  .instagramLink:hover {
+    fill: #c18585;
+    text-decoration: none;
+    background-color: #252525;
+    color: #c18585;
+  }
 }
 /*--------Desktop------------*/
 @media (min-width: 600px) {
@@ -24,15 +30,18 @@
     font-size: 30px;
     margin-bottom: 2em;
   }
+  .instagramLink:hover {
+    background-color: #c18585;
+    color: #252525;
+    text-decoration: none;
+  }
+  .instagramLink:hover .svg_instagram {
+    fill: #252525;
+  }
 }
 /*-------------------------------*/
 .instagramContainer {
   border: 1px solid #c18585;
-}
-.instagramLink:hover {
-  background-color: #c18585;
-  color: #252525;
-  text-decoration: none;
 }
 
 .instagramLink {
@@ -40,9 +49,7 @@
   color: #c18585;
   fill: #c18585;
 }
-.instagramLink:hover .svg_instagram {
-  fill: #252525;
-}
+
 .instagramLink:hover {
   font-weight: normal;
 }

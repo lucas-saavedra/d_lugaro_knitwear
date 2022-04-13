@@ -21,11 +21,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c18585",endColorstr="#252525",GradientType=1);
 }
 
-.modal-content {
+/* .modal-content {
   background-color: transparent !important ;
   color: white;
   border: none !important;
-}
+} */
 .mobile_back_arrow {
   display: flex;
   justify-content: center;

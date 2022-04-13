@@ -11,7 +11,7 @@ const WhatsApp = () => {
                     className='container_whatsapp'>
                     <WhatsAppIco className="svg_whatsapp" />
                     <div className="link">
-                        Whatsapp
+                        WhatsApp
                     </div >
                 </a>
             </div>

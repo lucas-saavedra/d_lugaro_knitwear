@@ -5,7 +5,6 @@ import WhatsApp from './components/WhatsApp/WhatsApp';
 import './app.css';
 
 function App() {
-
   return (
     <div className="App-header">
       <Gallery />

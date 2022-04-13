@@ -1,12 +1,3 @@
-import './backArrow.css'
-
-const styles_hover = {
-  transform: 'translate(90.424 14) rotate(90)',
-  d: "M18,7.5V97.924",
-  transform5: "translate(-7.5 60.487)",
-  transition: 'all 1s'
-}
-
 const BackArrowHover = (props) => {
 
   return (
@@ -22,12 +13,12 @@ const BackArrowHover = (props) => {
           <g
             id="Icon_feather-arrow-down"
             data-name="Icon feather-arrow-down"
-            transform={styles_hover.transform}
+            transform="translate(90.424 14) rotate(90)"
           >
             <path
               id="Trazado_4"
               data-name="Trazado 4"
-              d={styles_hover.d}
+              d="M18,7.5V97.924"
 
               transform="translate(-7.5 -7.5)"
               fill="none"
@@ -40,7 +31,7 @@ const BackArrowHover = (props) => {
               id="Trazado_5"
               data-name="Trazado 5"
               d="M28.5,18,18,29.937,7.5,18"
-              transform={styles_hover.transform5}
+              transform="translate(-7.5 60.487)"
               fill="none"
               stroke="#fff"
               strokeLinecap="round"
