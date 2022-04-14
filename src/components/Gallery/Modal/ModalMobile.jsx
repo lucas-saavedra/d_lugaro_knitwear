@@ -15,7 +15,7 @@ const ModalMobile = (props) => {
             aria-labelledby="contained-modal-title-vcenter"
         >
             <Image key={props.idx}
-                style={height > 400 ? {
+                style={height >500 ? {
                     padding: `${width < 400 ? "1em 0em 0 0em" : "3em 1em"}`,
                     marginLeft: '2em',
                     marginRight: '2em',
